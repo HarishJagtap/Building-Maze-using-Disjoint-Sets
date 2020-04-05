@@ -13,8 +13,10 @@ Python scripts are used here to **generate maze data using disjoint sets**. They
 The program compiles and runs on both **Windows and Linux OS**.
 
 **Make** tool is required for compilation.
-**python3** is required for running python scripts
-**OpenGL** is required to display the maze
+
+**python3** is required for running python scripts.
+
+**OpenGL** is required to display the maze.
 
 ### For Windows OS
 1.  **cl compiler** (download the Build Tools for Visual Studio)
@@ -34,8 +36,8 @@ The program compiles and runs on both **Windows and Linux OS**.
 	
 ## Steps to use
 
-1. You need to **create the maze data** (csv files).
-2. **Display the maze** using the data
+1. You need to first **create the maze data** (csv files).
+2. Then **display the maze** using the data
 
 By creating this two step process, it **allows to display same maze again and again** in different PCs by using one set of data (csv files).
 
@@ -44,7 +46,7 @@ By creating this two step process, it **allows to display same maze again and ag
 1. Open terminal/command prompt (in top level directory) and enter
 
 	1. Create the maze data (csv files)
-		> python mazerun.py --create-data [length] [width]
+		> python mazerun.py --create-data [length of maze] [width of maze]
 		
 			Ex: python mazerun.py --create-data 30 20
 			
@@ -52,10 +54,10 @@ By creating this two step process, it **allows to display same maze again and ag
 					Ex: python3 mazerun.py
                     
 	2. Display the maze in a window (**3 styles to display**)
-		1. Also **show the path** in the maze which connects the start node and last node **filled** with color
+		1. **Show the path** in the maze which connects the start node and last node **filled** with color
 			> python mazerun.py
 		
-		2.  Also **show the path** in the maze **dotted** with color
+		2.  **Show the path** in the maze **dotted** with color
 			> python mazerun.py --dotted-maze-path
 
 		3. **Don't show the path** in the maze
@@ -71,3 +73,31 @@ http://www.songho.ca/opengl/gl_transform.html
 
 ## Results
 
+**20x20 maze with filled path**
+
+<img src="sample/maze_20x20_filled.png" width=300 />
+
+
+**20x20 maze with no path**
+
+<img src=sample/maze_20x20_nopath.png width=300>
+
+
+**20x20 maze with dotted path**
+
+<img src=sample/maze_20x20_dotted.png width=300>
+
+
+**100x100 maze with filled path**
+
+<img src=sample/maze_100x100_filled.png width=800>
+
+
+**100x100 maze with no path**
+
+<img src=sample/maze_100x100_nopath.png width=800>
+
+
+**100x100 maze with dotted path**
+
+<img src=sample/maze_100x100_dotted.png width=800>
