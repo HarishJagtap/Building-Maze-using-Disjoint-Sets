@@ -1,0 +1,4 @@
+bin/
+result/
+.vscode/
+__pycache__/
